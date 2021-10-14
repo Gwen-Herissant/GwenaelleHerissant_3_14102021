@@ -1,3 +1,5 @@
+@use "../utils/_variables.scss" as var;
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -12,7 +14,7 @@ html {
 body {
   padding: 0em 0em;
   margin: 0em;
-  background-color: $bg-primary;
+  background-color: var.$bg-primary;
   font-family: "Roboto", sans-serif;
 }
 
