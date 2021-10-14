@@ -1,16 +1,16 @@
-@forward "./base/general-styles.scss";
+@forward "./base/_general-styles.scss";
 
 //utils
-@forward "./utils/variables.scss";
-@forward "./utils/animations.scss";
+@forward "./utils/_variables.scss";
+@forward "./utils/_animations.scss";
 
 //layouts
-@forward "./layouts/header.scss";
-@forward "./layouts/footer.scss";
+@forward "./layouts/_header.scss";
+@forward "./layouts/_footer.scss";
 
 //pages
-@forward "./pages/homepage.scss";
-@forward "./pages/menus.scss";
+@forward "./pages/_homepage.scss";
+@forward "./pages/_menus.scss";
 
 //components
-@forward "./components/buttons";
+@forward "./components/_buttons";
