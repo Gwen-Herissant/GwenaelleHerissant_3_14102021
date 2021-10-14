@@ -1,0 +1,16 @@
+@forward "./base/general-styles.scss";
+
+//utils
+@forward "./utils/variables.scss";
+@forward "./utils/animations.scss";
+
+//layouts
+@forward "./layouts/header.scss";
+@forward "./layouts/footer.scss";
+
+//pages
+@forward "./pages/homepage.scss";
+@forward "./pages/menus.scss";
+
+//components
+@forward "./components/buttons";
