@@ -1,0 +1,26 @@
+@use "../utils/_variables.scss" as var;
+@use "../base/_general-styles.scss" as gen;
+
+.footer {
+  background-color: var.$bg-secondary;
+  color: var.$bg-primary;
+  padding: 27px 0 30px 25px;
+  &__title {
+    font-family: "Shrikhand", cursive;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+  &__link {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 7px;
+  }
+  &__link a {
+    color: var.$bg-primary;
+  }
+  &__icon {
+    font-size: 12px;
+    padding-right: 10px;
+  }
+}
