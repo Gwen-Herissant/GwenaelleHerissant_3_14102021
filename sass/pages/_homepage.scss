@@ -17,3 +17,18 @@
     padding-right: 25px;
   }
 }
+
+.intro {
+  background-color: darken(var.$bg-primary, 3%);
+  text-align: center;
+  padding: 40px 30px 70px 30px;
+  &__title {
+    line-height: 1.1;
+    padding-bottom: 12px;
+  }
+  &__description {
+    color: lighten(var.$text-color, 25%);
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+}
