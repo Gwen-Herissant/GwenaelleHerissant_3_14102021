@@ -1,8 +1,13 @@
 @use "../utils/_variables.scss" as var;
 @use "../base/_general-styles.scss" as gen;
 
-.main__img {
-  width: 100%;
+.main {
+  background-color: darken(var.$bg-primary, 5%);
+  &__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
 }
 
 .menu {
