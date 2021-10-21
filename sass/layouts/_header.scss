@@ -4,8 +4,10 @@
 .header {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 2;
   padding: 20px 0 15px 0;
-  box-shadow: 0 5px 5px darken(var.$bg-primary, 15%);
+  box-shadow: 0 3px 4px darken(var.$bg-primary, 20%);
   &__logo {
     width: 165px;
   }
