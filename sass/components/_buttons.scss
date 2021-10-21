@@ -1,0 +1,19 @@
+@use "../utils/_variables.scss" as var;
+@use "../base/_general-styles.scss" as gen;
+
+.btn {
+  background: linear-gradient(172deg, var.$color-secondary, var.$color-primary);
+  color: var.$bg-primary;
+  padding: 15px 20px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 10px darken(var.$bg-primary, 25%);
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: linear-gradient(
+      172deg,
+      lighten(var.$color-secondary, 3%),
+      lighten(var.$color-primary, 3%)
+    );
+    box-shadow: 0px 5px 12px darken(var.$bg-primary, 40%);
+  }
+}
