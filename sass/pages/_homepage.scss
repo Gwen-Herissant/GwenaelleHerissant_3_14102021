@@ -1,0 +1,19 @@
+@use "../utils/_variables.scss" as var;
+@use "../base/_general-styles.scss" as gen;
+
+.location {
+  display: flex;
+  justify-content: center;
+  background-color: darken(var.$bg-primary, 8%);
+  color: lighten(var.$text-color, 20%);
+  padding: 18px 0 16px;
+  &__icon {
+    font-size: 16px;
+    padding-right: 15px;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 25px;
+  }
+}
