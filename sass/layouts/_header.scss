@@ -1,0 +1,18 @@
+@use "../utils/_variables.scss" as var;
+@use "../base/_general-styles.scss" as gen;
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 15px 0;
+  box-shadow: 0 5px 5px darken(var.$bg-primary, 15%);
+  &__logo {
+    width: 165px;
+  }
+  &__icon {
+    position: absolute;
+    font-size: 18px;
+    color: lighten(var.$text-color, 20%);
+    transform: translate(-75px, 5px);
+  }
+}
