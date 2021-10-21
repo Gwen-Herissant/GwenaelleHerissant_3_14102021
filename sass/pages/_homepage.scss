@@ -32,3 +32,46 @@
     margin-bottom: 40px;
   }
 }
+
+.instruction {
+  text-align: left;
+  padding: 50px 20px 66px 20px;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__cell {
+    display: flex;
+    align-content: center;
+    // justify-content: center;
+    background-color: darken(var.$bg-primary, 4%);
+    border-radius: 20px;
+    box-shadow: 0px 5px 12px darken(var.$bg-primary, 12%);
+    padding: 25px 25px 20px 25px;
+    margin: 0 0 25px 10px;
+    &__num {
+      font-size: 14px;
+      background-color: var.$color-primary;
+      color: var.$bg-primary;
+      border-radius: 100%;
+      padding: 3px 7px;
+      transform: translateX(-35px);
+    }
+    &__icon {
+      color: lighten(var.$text-color, 45%);
+      font-size: 18px;
+      padding-right: 25px;
+      padding-top: 2px;
+      margin-left: -12px;
+      &--last {
+        color: var.$color-primary;
+        font-size: 16px;
+      }
+    }
+    &__text {
+      font-weight: 500;
+    }
+    &--last {
+      background-color: lighten(var.$color-primary, 35%);
+    }
+  }
+}
