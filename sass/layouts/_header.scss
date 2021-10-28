@@ -11,6 +11,10 @@
   box-shadow: 0 3px 4px darken(var.$bg-primary, 20%);
   &__logo {
     width: 165px;
+    @include mix.breakpoint(lg) {
+      margin-left: auto;
+      margin-right: 6%;
+    }
   }
   &__icon {
     position: absolute;
@@ -19,6 +23,11 @@
     transform: translate(-75px, 5px);
     @include mix.breakpoint(sm) {
       left: 16%;
+      margin-left: 1%;
+    }
+    @include mix.breakpoint(lg) {
+      left: 11%;
+      margin-left: 1%;
     }
   }
   &--menu {
