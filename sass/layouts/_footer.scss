@@ -1,5 +1,6 @@
 @use "../utils/_variables.scss" as var;
 @use "../base/_general-styles.scss" as gen;
+@use "../utils/_mixins.scss" as mix;
 
 .footer {
   background-color: var.$bg-secondary;
@@ -10,6 +11,11 @@
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 18px;
+    @include mix.breakpoint(sm) {
+      font-size: 20px;
+      text-align: center;
+      margin: 5px 0 30px;
+    }
   }
   &__link {
     font-size: 16px;
@@ -22,5 +28,13 @@
   &__icon {
     font-size: 12px;
     padding-right: 10px;
+  }
+  &__flex {
+    @include mix.breakpoint(sm) {
+      display: flex;
+      justify-content: space-evenly;
+      width: 70%;
+      margin: auto;
+    }
   }
 }
