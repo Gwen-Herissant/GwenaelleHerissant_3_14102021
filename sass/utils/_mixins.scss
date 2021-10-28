@@ -1,0 +1,16 @@
+//media breakpoints
+
+//min-width values: 576px, 768px, 992px, 1200px, 1400px
+$breakpoints-up: (
+  "sm": "36em",
+  "md": "48em",
+  "lg": "62em",
+  "xl": "75em",
+  "xxl": "87.5em",
+);
+
+@mixin breakpoint($size) {
+  @media (min-width: map-get($map: $breakpoints-up, $key: $size)) {
+    @content;
+  }
+}
