@@ -1,5 +1,6 @@
 @use "../utils/_variables.scss" as var;
 @use "../base/_general-styles.scss" as gen;
+@use "../utils/_mixins.scss" as mix;
 
 .header {
   display: flex;
@@ -16,6 +17,9 @@
     font-size: 18px;
     color: lighten(var.$text-color, 20%);
     transform: translate(-75px, 5px);
+    @include mix.breakpoint(sm) {
+      left: 16%;
+    }
   }
   &--menu {
     box-shadow: none;
