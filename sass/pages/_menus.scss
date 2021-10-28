@@ -27,6 +27,7 @@
     align-items: center;
     margin-bottom: 28px;
     @include mix.breakpoint(sm) {
+      width: 90%;
       // justify-content: center;
       margin-left: 5%;
     }
@@ -39,7 +40,7 @@
       font-size: 24px;
       margin-left: 10%;
       @include mix.breakpoint(sm) {
-        margin-left: 57%;
+        margin-left: auto;
       }
     }
   }
