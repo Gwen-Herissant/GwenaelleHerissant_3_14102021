@@ -8,6 +8,9 @@
   border-radius: 50px;
   box-shadow: 0px 5px 10px darken(var.$bg-primary, 25%);
   transition: all 0.2s ease-in-out;
+  &--shorter {
+    padding: 15px 45px;
+  }
   &:hover {
     background: linear-gradient(
       172deg,
