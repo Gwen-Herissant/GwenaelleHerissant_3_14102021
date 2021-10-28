@@ -23,16 +23,28 @@
   background-color: darken(var.$bg-primary, 3%);
   text-align: center;
   padding: 35px 30px 70px 30px;
+  @include mix.breakpoint(lg) {
+    padding: 60px 30px 80px 30px;
+    height: 100%;
+  }
   &__title {
     font-size: 26px;
     font-weight: 500;
     line-height: 1.1;
     padding-bottom: 12px;
+    @include mix.breakpoint(lg) {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
   }
   &__description {
     color: lighten(var.$text-color, 25%);
     font-weight: 300;
     margin-bottom: 40px;
+    @include mix.breakpoint(lg) {
+      font-size: 18px;
+      margin-bottom: 70px;
+    }
   }
 }
 
@@ -41,6 +53,9 @@
   padding: 45px 20px 40px 20px;
   &__title {
     margin-bottom: 30px;
+    @include mix.breakpoint(lg) {
+      margin-left: 8%;
+    }
   }
   &__cell {
     display: flex;
@@ -54,6 +69,9 @@
     @include mix.breakpoint(sm) {
       width: 65%;
       margin: 0 auto 25px auto;
+    }
+    @include mix.breakpoint(lg) {
+      width: 80%;
     }
     &__num {
       font-size: 14px;
@@ -86,8 +104,14 @@
 .restaurant {
   background-color: darken(var.$bg-primary, 3%);
   padding: 50px 20px;
+  @include mix.breakpoint(lg) {
+    padding: 60px 40px 70px;
+  }
   &__title {
     margin-bottom: 20px;
+    @include mix.breakpoint(lg) {
+      margin-bottom: 35px;
+    }
   }
   &__card {
     display: block;
@@ -117,6 +141,14 @@
         width: 12%;
         margin-left: 32%;
       }
+      @include mix.breakpoint(lg) {
+        width: 6%;
+        margin-left: 38%;
+      }
+      @include mix.breakpoint(xl) {
+        width: 7%;
+        margin-left: 38%;
+      }
     }
   }
   &__details {
@@ -137,10 +169,27 @@
   }
 }
 
+.flex__container {
+  @include mix.breakpoint(lg) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.flex__item {
+  @include mix.breakpoint(lg) {
+    width: 100%;
+  }
+}
+
 .grid__container {
   @include mix.breakpoint(sm) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+  @include mix.breakpoint(lg) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
   }
 }
