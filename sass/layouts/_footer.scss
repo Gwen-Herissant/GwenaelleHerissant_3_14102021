@@ -19,6 +19,10 @@
       text-align: center;
       margin: 5px 0 30px;
     }
+    @include mix.breakpoint(md) {
+      text-align: left;
+      margin: 5px 5% 30px;
+    }
   }
   &__link {
     font-size: 16px;
@@ -38,6 +42,12 @@
       justify-content: space-evenly;
       width: 70%;
       margin: auto;
+    }
+    @include mix.breakpoint(md) {
+      display: flex;
+      justify-content: left;
+      gap: 15%;
+      margin-left: 5%;
     }
   }
 }
