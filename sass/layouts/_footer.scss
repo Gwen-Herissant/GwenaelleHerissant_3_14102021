@@ -6,6 +6,9 @@
   background-color: var.$bg-secondary;
   color: var.$bg-primary;
   padding: 27px 0 30px 25px;
+  @include mix.breakpoint(sm) {
+    padding: 27px 0 30px;
+  }
   &__title {
     font-family: "Shrikhand", cursive;
     font-size: 18px;
