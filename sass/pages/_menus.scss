@@ -1,5 +1,6 @@
 @use "../utils/_variables.scss" as var;
 @use "../base/_general-styles.scss" as gen;
+@use "../utils/_mixins.scss" as mix;
 
 .main {
   background-color: darken(var.$bg-primary, 5%);
@@ -18,10 +19,17 @@
   padding: 35px 15px 60px 15px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+  @include mix.breakpoint(sm) {
+    padding: 35px auto 60px auto;
+  }
   &__header {
     display: flex;
     align-items: center;
     margin-bottom: 28px;
+    @include mix.breakpoint(sm) {
+      // justify-content: center;
+      margin-left: 5%;
+    }
     &__title {
       font-family: "Shrikhand", cursive;
       font-size: 27px;
@@ -30,6 +38,9 @@
     &__icon {
       font-size: 24px;
       margin-left: 10%;
+      @include mix.breakpoint(sm) {
+        margin-left: 57%;
+      }
     }
   }
   &__part {
@@ -37,6 +48,9 @@
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 25px;
+    @include mix.breakpoint(sm) {
+      margin-left: 5%;
+    }
     &::after {
       content: "";
       border: 2px solid var.$color-tertiary;
@@ -44,6 +58,9 @@
       width: 10%;
       transform: translateY(22px);
       left: 15px;
+      @include mix.breakpoint(sm) {
+        margin-left: 5%;
+      }
     }
   }
   &__item {
@@ -54,6 +71,10 @@
     box-shadow: 0px 5px 10px darken(var.$bg-primary, 20%);
     padding: 15px;
     margin-bottom: 15px;
+    @include mix.breakpoint(sm) {
+      width: 90%;
+      margin: 0 auto 15px auto;
+    }
     &__plate {
       font-size: 18px;
       font-weight: 500;
