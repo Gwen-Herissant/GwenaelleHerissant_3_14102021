@@ -120,6 +120,7 @@
   }
   &__card {
     display: block;
+    position: relative;
     border-radius: 15px;
     box-shadow: 0px 3px 8px darken(var.$bg-primary, 15%);
     margin-bottom: 18px;
@@ -138,21 +139,25 @@
     width: 22%;
     transform: translateY(10px);
     padding: 5px 0px;
-    margin-left: 64%;
+    margin-left: 75%;
     // margin-right: 25px;
     border-radius: 2px;
     &:nth-of-type(1) {
       @include mix.breakpoint(sm) {
-        width: 12%;
-        margin-left: 32%;
+        width: 30%;
+        margin-left: 67%;
+      }
+      @include mix.breakpoint(md) {
+        width: 36%;
+        margin-left: 60%;
       }
       @include mix.breakpoint(lg) {
-        width: 6%;
-        margin-left: 13.5%;
+        width: 34%;
+        margin-left: 62%;
       }
       @include mix.breakpoint(xl) {
-        width: 7%;
-        margin-left: 14%;
+        width: 26%;
+        margin-left: 71%;
       }
     }
   }
