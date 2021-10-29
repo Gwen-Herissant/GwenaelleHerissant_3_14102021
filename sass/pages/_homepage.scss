@@ -24,7 +24,8 @@
   text-align: center;
   padding: 35px 30px 70px 30px;
   @include mix.breakpoint(lg) {
-    padding: 60px 30px 80px 30px;
+    background-color: var.$bg-primary;
+    padding: 45px 45px 80px 45px;
     height: 100%;
   }
   &__title {
@@ -34,7 +35,7 @@
     padding-bottom: 12px;
     @include mix.breakpoint(lg) {
       font-size: 32px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
   }
   &__description {
@@ -43,7 +44,7 @@
     margin-bottom: 40px;
     @include mix.breakpoint(lg) {
       font-size: 18px;
-      margin-bottom: 70px;
+      margin-bottom: 80px;
     }
   }
 }
@@ -143,11 +144,11 @@
       }
       @include mix.breakpoint(lg) {
         width: 6%;
-        margin-left: 38%;
+        margin-left: 13.5%;
       }
       @include mix.breakpoint(xl) {
         width: 7%;
-        margin-left: 38%;
+        margin-left: 14%;
       }
     }
   }
