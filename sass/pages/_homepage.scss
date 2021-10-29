@@ -54,8 +54,8 @@
   padding: 45px 20px 40px 20px;
   &__title {
     margin-bottom: 30px;
-    @include mix.breakpoint(lg) {
-      margin-left: 8%;
+    @include mix.breakpoint(sm) {
+      text-align: center;
     }
   }
   &__cell {
@@ -68,11 +68,15 @@
     padding: 25px 25px 20px 25px;
     margin: 0 0 25px 10px;
     @include mix.breakpoint(sm) {
-      width: 65%;
+      width: 55%;
+      justify-content: center;
       margin: 0 auto 25px auto;
     }
     @include mix.breakpoint(lg) {
-      width: 80%;
+      width: 70%;
+    }
+    @include mix.breakpoint(xl) {
+      width: 60%;
     }
     &__num {
       font-size: 14px;
