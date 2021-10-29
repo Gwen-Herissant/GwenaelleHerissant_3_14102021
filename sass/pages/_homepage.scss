@@ -8,6 +8,10 @@
   background-color: darken(var.$bg-primary, 8%);
   color: lighten(var.$text-color, 20%);
   padding: 18px 0 16px;
+  @include mix.breakpoint(xxl) {
+    width: 100vw;
+    transform: translateX(-22%);
+  }
   &__icon {
     font-size: 16px;
     padding-right: 15px;
@@ -117,7 +121,11 @@
   }
   @include mix.breakpoint(xxl) {
     height: 40vh;
-    padding-top: 5%;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 17.5%;
+    padding: 5% 23% 0 23%;
   }
   &__title {
     margin-bottom: 20px;

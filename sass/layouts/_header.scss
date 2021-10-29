@@ -9,6 +9,11 @@
   z-index: 2;
   padding: 20px 0 15px 0;
   box-shadow: 0 3px 4px darken(var.$bg-primary, 20%);
+  @include mix.breakpoint(xxl) {
+    width: 100vw;
+    padding-right: 32%;
+    transform: translateX(-22%);
+  }
   &__logo {
     width: 165px;
     @include mix.breakpoint(lg) {
@@ -28,6 +33,9 @@
     @include mix.breakpoint(lg) {
       left: 11%;
       margin-left: 0px;
+    }
+    @include mix.breakpoint(xxl) {
+      margin-left: 14%;
     }
   }
   &--menu {

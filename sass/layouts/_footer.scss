@@ -11,6 +11,11 @@
   }
   @include mix.breakpoint(xxl) {
     height: 20vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 20%;
   }
   &__title {
     font-family: "Shrikhand", cursive;
