@@ -1,12 +1,12 @@
 //media breakpoints
 
-//min-width values: 576px, 768px, 992px, 1200px, 1400px
+//min-width values: 576px, 768px, 992px, 1200px, 1920px
 $breakpoints-up: (
   "sm": "36em",
   "md": "48em",
   "lg": "62em",
   "xl": "75em",
-  "xxl": "87.5em",
+  "xxl": "120em",
 );
 
 @mixin breakpoint($size) {
