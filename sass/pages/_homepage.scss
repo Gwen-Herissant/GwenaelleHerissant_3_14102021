@@ -8,10 +8,6 @@
   background-color: darken(var.$bg-primary, 8%);
   color: lighten(var.$text-color, 20%);
   padding: 18px 0 16px;
-  @include mix.breakpoint(xxl) {
-    width: 100vw;
-    transform: translateX(-22%);
-  }
   &__icon {
     font-size: 16px;
     padding-right: 15px;
@@ -33,7 +29,8 @@
     height: 100%;
   }
   @include mix.breakpoint(xxl) {
-    padding-top: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   &__title {
     font-size: 26px;
@@ -117,15 +114,11 @@
   background-color: darken(var.$bg-primary, 3%);
   padding: 50px 20px;
   @include mix.breakpoint(lg) {
-    padding: 60px 40px 70px;
+    padding: 45px 40px 70px;
   }
   @include mix.breakpoint(xxl) {
     height: 40vh;
-    width: 100vw;
-    position: absolute;
-    left: 0;
-    bottom: 17.5%;
-    padding: 5% 23% 0 23%;
+    // padding-top: 5%;
   }
   &__title {
     margin-bottom: 20px;
@@ -208,10 +201,10 @@
   @include mix.breakpoint(lg) {
     width: 100%;
   }
-  @include mix.breakpoint(xxl) {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
+  // @include mix.breakpoint(xxl) {
+  //   margin-top: auto;
+  //   margin-bottom: auto;
+  // }
 }
 
 .grid__container {
