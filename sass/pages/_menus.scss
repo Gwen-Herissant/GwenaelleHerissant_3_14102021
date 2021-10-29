@@ -22,6 +22,7 @@
   @include mix.breakpoint(sm) {
     padding: 35px auto 60px auto;
   }
+
   &__header {
     display: flex;
     align-items: center;
@@ -30,6 +31,9 @@
       width: 90%;
       // justify-content: center;
       margin-left: 5%;
+    }
+    @include mix.breakpoint(lg) {
+      margin-bottom: 40px;
     }
     &__title {
       font-family: "Shrikhand", cursive;
@@ -49,19 +53,11 @@
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 25px;
+    border-bottom: 3.5px solid var.$color-tertiary;
+    width: 35px;
+    padding-bottom: 3px;
     @include mix.breakpoint(sm) {
       margin-left: 5%;
-    }
-    &::after {
-      content: "";
-      border: 2px solid var.$color-tertiary;
-      position: absolute;
-      width: 10%;
-      transform: translateY(22px);
-      left: 15px;
-      @include mix.breakpoint(sm) {
-        margin-left: 5%;
-      }
     }
   }
   &__item {
@@ -95,8 +91,25 @@
 
 .menu li:last-of-type {
   margin-bottom: 65px;
+  @include mix.breakpoint(lg) {
+    margin-bottom: 75px;
+  }
 }
 
 .btn-align {
   text-align: center;
+}
+
+//desktop styles
+
+.flex__container {
+  @include mix.breakpoint(lg) {
+    display: flex;
+  }
+}
+
+.desktop__col {
+  @include mix.breakpoint(lg) {
+    width: 30%;
+  }
 }
