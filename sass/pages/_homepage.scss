@@ -28,6 +28,9 @@
     padding: 45px 45px 80px 45px;
     height: 100%;
   }
+  @include mix.breakpoint(xxl) {
+    padding-top: 10%;
+  }
   &__title {
     font-size: 26px;
     font-weight: 500;
@@ -112,6 +115,10 @@
   @include mix.breakpoint(lg) {
     padding: 60px 40px 70px;
   }
+  @include mix.breakpoint(xxl) {
+    height: 40vh;
+    padding-top: 5%;
+  }
   &__title {
     margin-bottom: 20px;
     @include mix.breakpoint(lg) {
@@ -184,11 +191,18 @@
     display: flex;
     justify-content: space-evenly;
   }
+  @include mix.breakpoint(xxl) {
+    height: 35vh;
+  }
 }
 
 .flex__item {
   @include mix.breakpoint(lg) {
     width: 100%;
+  }
+  @include mix.breakpoint(xxl) {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 

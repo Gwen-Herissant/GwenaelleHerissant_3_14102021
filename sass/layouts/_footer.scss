@@ -9,6 +9,9 @@
   @include mix.breakpoint(sm) {
     padding: 27px 0 30px;
   }
+  @include mix.breakpoint(xxl) {
+    height: 20vh;
+  }
   &__title {
     font-family: "Shrikhand", cursive;
     font-size: 18px;
