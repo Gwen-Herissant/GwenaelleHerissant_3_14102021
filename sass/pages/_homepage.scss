@@ -2,6 +2,7 @@
 @use "../base/_general-styles.scss" as gen;
 @use "../utils/_mixins.scss" as mix;
 
+//location section/line
 .location {
   display: flex;
   justify-content: center;
@@ -19,6 +20,7 @@
   }
 }
 
+//title + concept description;
 .intro {
   background-color: darken(var.$bg-primary, 3%);
   text-align: center;
@@ -53,6 +55,7 @@
   }
 }
 
+//"how it works" section
 .instruction {
   text-align: left;
   padding: 45px 20px 40px 20px;
@@ -110,6 +113,7 @@
   }
 }
 
+//restaurant section w/ cards
 .restaurant {
   background-color: darken(var.$bg-primary, 3%);
   padding: 50px 20px;
@@ -187,6 +191,7 @@
   }
 }
 
+//setup for intro & instructions for desktop
 .flex__container {
   @include mix.breakpoint(lg) {
     display: flex;
@@ -207,6 +212,7 @@
   // }
 }
 
+//setup for restaurants on ipad & desktop
 .grid__container {
   @include mix.breakpoint(sm) {
     display: grid;

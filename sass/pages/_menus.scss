@@ -2,6 +2,7 @@
 @use "../base/_general-styles.scss" as gen;
 @use "../utils/_mixins.scss" as mix;
 
+//page outside of "menu section" = background image
 .main {
   background-color: darken(var.$bg-primary, 5%);
   &__img {
@@ -14,6 +15,7 @@
   }
 }
 
+//entire menu section (=everything on grey bg) -> title + menus
 .menu {
   position: relative;
   top: -40px;
@@ -29,6 +31,7 @@
     height: 60vh;
     padding-top: 5%;
   }
+  //header section = restaurant name + heart icon
   &__header {
     display: flex;
     align-items: center;
@@ -54,6 +57,7 @@
       }
     }
   }
+  //menu parts (aka "entrée" "plat" "dessert")
   &__part {
     text-transform: uppercase;
     font-size: 16px;
@@ -66,6 +70,7 @@
       margin-left: 5%;
     }
   }
+  //menu btns
   &__item {
     display: flex;
     justify-content: space-between;
@@ -95,6 +100,7 @@
   }
 }
 
+//margin between last menu item and btn
 .menu li:last-of-type {
   margin-bottom: 65px;
   @include mix.breakpoint(lg) {
@@ -102,6 +108,7 @@
   }
 }
 
+//btn alignement
 .btn-align {
   text-align: center;
   @include mix.breakpoint(xxl) {
@@ -110,7 +117,6 @@
 }
 
 //desktop styles
-
 .flex__container {
   @include mix.breakpoint(lg) {
     display: flex;
