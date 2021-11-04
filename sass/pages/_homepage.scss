@@ -130,6 +130,9 @@
       margin-bottom: 35px;
     }
   }
+  &__parent {
+    position: relative;
+  }
   &__card {
     display: block;
     position: relative;
@@ -185,8 +188,14 @@
       font-weight: 300;
     }
     &__icon {
+      position: absolute;
       font-size: 22px;
       margin-right: 4%;
+      bottom: 35px;
+      right: 15px;
+      @include mix.breakpoint(sm) {
+        bottom: 55px;
+      }
     }
   }
 }
