@@ -50,13 +50,19 @@
       font-weight: 200;
     }
     &__icon {
+      position: relative;
       font-size: 24px;
       margin-left: 10%;
+      background-color: darken(var.$bg-primary, 5%);
       @include mix.breakpoint(sm) {
         margin-left: auto;
       }
+      &:hover {
+        background-color: var.$color-secondary;
+      }
     }
   }
+
   //menu parts (aka "entrée" "plat" "dessert")
   &__part {
     text-transform: uppercase;
@@ -73,12 +79,14 @@
   //menu btns
   &__item {
     display: flex;
+    position: relative;
     justify-content: space-between;
     background-color: var.$bg-primary;
     border-radius: 17px;
     box-shadow: 0px 5px 10px darken(var.$bg-primary, 20%);
     padding: 15px;
     margin-bottom: 15px;
+    overflow: hidden;
     @include mix.breakpoint(sm) {
       width: 90%;
       margin: 0 auto 15px auto;
@@ -97,6 +105,40 @@
       font-weight: 600;
       color: lighten(var.$text-color, 15%);
     }
+    &__check {
+      position: absolute;
+      background-color: var.$color-tertiary;
+      width: 60px;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      transform: translateX(60px);
+      &:hover {
+        transform: translateX(0px);
+        animation: check-slider 0.5s ease-in;
+      }
+    }
+    &__check i {
+      display: block;
+      font-size: 20px;
+      margin: 26px 19px;
+      color: var.$bg-primary;
+    }
+    &:hover {
+      &__check {
+        transform: translateX(0px);
+        animation: check-slider 0.5s ease-in;
+      }
+    }
+  }
+}
+
+@keyframes check-slider {
+  0% {
+    transform: translateX(60px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 
