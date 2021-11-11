@@ -110,6 +110,14 @@
       width: calc(90%);
       margin: 0 auto 15px auto;
     }
+
+    &__plate,
+    &__description {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
     &__plate {
       font-size: 18px;
       font-weight: 500;
@@ -118,9 +126,7 @@
     &__description {
       font-size: 14px;
       font-weight: 300;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+      min-width: 90%;
     }
     &__price {
       align-self: flex-end;
@@ -195,6 +201,6 @@
 
 .desktop__col {
   @include mix.breakpoint(lg) {
-    width: 30%;
+    width: 450px;
   }
 }
