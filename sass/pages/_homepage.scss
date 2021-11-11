@@ -193,8 +193,29 @@
       margin-right: 4%;
       bottom: 35px;
       right: 15px;
+      z-index: 0;
       @include mix.breakpoint(sm) {
         bottom: 55px;
+      }
+      &::before {
+        content: "\f004";
+        position: absolute;
+        display: inline-block;
+        color: var.$color-secondary;
+        opacity: 0;
+        z-index: -1;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        transition: opacity 0.2s ease-in;
+      }
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
       }
     }
   }
