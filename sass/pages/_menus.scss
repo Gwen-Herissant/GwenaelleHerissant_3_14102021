@@ -113,10 +113,6 @@
       bottom: 0;
       right: 0;
       transform: translateX(60px);
-      &:hover {
-        transform: translateX(0px);
-        animation: check-slider 0.5s ease-in;
-      }
     }
     &__check i {
       display: block;
@@ -124,21 +120,13 @@
       margin: 26px 19px;
       color: var.$bg-primary;
     }
-    &:hover {
-      &__check {
-        transform: translateX(0px);
-        animation: check-slider 0.5s ease-in;
-      }
-    }
   }
 }
 
-@keyframes check-slider {
-  0% {
-    transform: translateX(60px);
-  }
-  100% {
+.menu__list a:hover {
+  .menu__item__check {
     transform: translateX(0px);
+    transition: transform 0.4s ease-in;
   }
 }
 
