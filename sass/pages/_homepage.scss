@@ -202,7 +202,9 @@
         position: absolute;
         display: inline-block;
         color: var.$color-secondary;
-        opacity: 0;
+        transform-origin: bottom;
+        transform: scale(0);
+        // opacity: 0;
         z-index: -1;
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
@@ -210,11 +212,12 @@
         font-variant: normal;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
-        transition: opacity 0.2s ease-in;
+        transition: transform 0.45s ease-in-out;
       }
       &:hover {
         &::before {
-          opacity: 1;
+          // opacity: 1;
+          transform: scale(1);
         }
       }
     }
