@@ -1,5 +1,35 @@
-//Menu check animation
+//homepage loader :
+@mixin loader-bar {
+  @keyframes loader-bar {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  animation: loader-bar 2.75s ease forwards;
+}
 
+@mixin loader {
+  @keyframes loader {
+    0%,
+    95% {
+      opacity: 1;
+    }
+    99% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+      visibility: hidden;
+    }
+  }
+  animation: loader 3s ease-out forwards;
+}
+
+//Menu check animation
 //reduce description when check happens
 @mixin description-width {
   @keyframes description-width {
