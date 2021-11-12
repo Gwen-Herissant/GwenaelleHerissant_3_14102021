@@ -1,6 +1,7 @@
 @use "../utils/_variables.scss" as var;
 @use "../base/_general-styles.scss" as gen;
 @use "../utils/_mixins.scss" as mix;
+@use "../utils/_animations.scss" as anim;
 
 //page outside of "menu section" = background image
 .main {
@@ -158,7 +159,7 @@
   &__list a:hover {
     .menu__item__description {
       width: calc(80%);
-      animation: description-width 0.25s ease-in;
+      @include anim.description-width;
     }
     .menu__item__price {
       transform: translateX(-62px);
@@ -169,26 +170,8 @@
       transition: transform 0.25s ease-in;
     }
     .menu__item__check i {
-      animation: icon-rotation 0.45s ease-in-out;
+      @include anim.icon-rotation;
     }
-  }
-}
-
-@keyframes description-width {
-  0% {
-    width: calc(100%);
-  }
-  100% {
-    width: calc(80%);
-  }
-}
-
-@keyframes icon-rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 

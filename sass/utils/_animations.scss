@@ -1,0 +1,23 @@
+@mixin description-width {
+  @keyframes description-width {
+    0% {
+      width: calc(100%);
+    }
+    100% {
+      width: calc(80%);
+    }
+  }
+  animation: description-width 0.25s ease-in;
+}
+
+@mixin icon-rotation {
+  @keyframes icon-rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  animation: icon-rotation 0.45s ease-in-out;
+}
