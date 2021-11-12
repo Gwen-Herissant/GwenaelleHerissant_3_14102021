@@ -175,9 +175,16 @@
   }
 }
 
+//animation for menus
+.menu li {
+  opacity: 0;
+  @include anim.menu-apparition;
+}
+
 //margin between last menu item and btn
 .menu li:last-of-type {
   margin-bottom: 65px;
+  // animation-delay: 1s;
   @include mix.breakpoint(lg) {
     margin-bottom: 75px;
   }
