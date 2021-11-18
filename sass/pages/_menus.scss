@@ -127,11 +127,21 @@
       font-size: 18px;
       font-weight: 500;
       margin-bottom: 4px;
+      @include mix.breakpoint(lg) {
+        min-width: 96%;
+      }
     }
+
     &__description {
       font-size: 14px;
       font-weight: 300;
       min-width: 90%;
+      @include mix.breakpoint(lg) {
+        min-width: 70%;
+      }
+      @include mix.breakpoint(xl) {
+        min-width: 75%;
+      }
     }
     &__price {
       align-self: flex-end;
@@ -157,9 +167,27 @@
   }
 
   &__list a:hover {
+    .menu__item__plate {
+      @include mix.breakpoint(lg) {
+        width: calc(90%);
+        @include anim.description-plate-lg;
+      }
+    }
     .menu__item__description {
       width: calc(80%);
       @include anim.description-width;
+      @include mix.breakpoint(md) {
+        width: calc(100%);
+        animation: none;
+      }
+      @include mix.breakpoint(lg) {
+        width: calc(73%);
+        @include anim.description-width-lg;
+      }
+      // @include mix.breakpoint(xl) {
+      //   width: calc(100%);
+      //   animation: none;
+      // }
     }
     .menu__item__price {
       transform: translateX(-62px);
