@@ -11,9 +11,15 @@
   width: 100vw;
   height: 100vh;
   top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
   background-color: var.$color-primary;
   overflow: hidden;
+  @include mix.breakpoint(xxl) {
+    padding-top: 10%;
+  }
 
   &__logo {
     font-family: "Shrikhand", cursive;
