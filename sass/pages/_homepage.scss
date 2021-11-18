@@ -30,6 +30,7 @@
     background-color: var.$bg-primary;
     padding: 45px 45px 80px 45px;
     height: 100%;
+    align-self: center;
   }
   @include mix.breakpoint(xxl) {
     margin-top: auto;
@@ -230,6 +231,8 @@
   @include mix.breakpoint(lg) {
     display: flex;
     justify-content: space-evenly;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   @include mix.breakpoint(xxl) {
     height: 35vh;
