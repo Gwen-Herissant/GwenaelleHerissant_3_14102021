@@ -29,7 +29,7 @@
     padding: 35px auto 60px auto;
   }
   @include mix.breakpoint(xxl) {
-    height: 60vh;
+    height: 61.5vh;
     padding-top: 5%;
   }
   //header section = restaurant name + heart icon
@@ -222,7 +222,7 @@
 .btn-align {
   text-align: center;
   @include mix.breakpoint(xxl) {
-    margin-top: -1%;
+    margin-top: 5%;
   }
 }
 
