@@ -56,7 +56,7 @@
     @include mix.breakpoint(sm) {
       width: 400px;
       height: 29px;
-      padding: 3px;
+      // padding: 2.5px;
     }
     &::after {
       content: "";
