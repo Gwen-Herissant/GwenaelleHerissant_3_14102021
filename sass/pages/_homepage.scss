@@ -123,7 +123,7 @@
     padding: 45px 40px 70px;
   }
   @include mix.breakpoint(xxl) {
-    height: 40vh;
+    height: 54.2vh;
     // padding-top: 5%;
   }
   &__title {
@@ -235,7 +235,7 @@
     margin-right: 40px;
   }
   @include mix.breakpoint(xxl) {
-    height: 35vh;
+    height: fit-content;
   }
 }
 
