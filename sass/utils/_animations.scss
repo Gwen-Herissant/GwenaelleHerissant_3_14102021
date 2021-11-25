@@ -30,6 +30,17 @@
 }
 
 //Menu check animation
+@mixin plate-width {
+  @keyframes plate-width {
+    0% {
+      width: calc(100%);
+    }
+    100% {
+      width: calc(97%);
+    }
+  }
+  animation: plate-width 0.25s ease-in;
+}
 //reduce description when check happens
 @mixin description-width {
   @keyframes description-width {
@@ -37,35 +48,10 @@
       width: calc(100%);
     }
     100% {
-      width: calc(80%);
+      width: calc(83.5%);
     }
   }
   animation: description-width 0.25s ease-in;
-}
-
-@mixin description-width-lg {
-  @keyframes description-width-lg {
-    0% {
-      width: calc(100%);
-    }
-    100% {
-      width: calc(73%);
-    }
-  }
-  animation: description-width-lg 0.25s ease-in;
-}
-
-//same for plate title
-@mixin description-plate-lg {
-  @keyframes description-plate-lg {
-    0% {
-      width: calc(100%);
-    }
-    100% {
-      width: calc(90%);
-    }
-  }
-  animation: description-plate-lg 0.25s ease-in;
 }
 
 //make check icon rotate

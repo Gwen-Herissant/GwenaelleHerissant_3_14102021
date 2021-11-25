@@ -116,6 +116,10 @@
       margin: 0 auto 15px auto;
     }
 
+    &__alignement {
+      width: 87%;
+    }
+
     &__plate,
     &__description {
       overflow: hidden;
@@ -128,20 +132,14 @@
       font-weight: 500;
       margin-bottom: 4px;
       @include mix.breakpoint(lg) {
-        min-width: 96%;
+        min-width: 98%;
       }
     }
 
     &__description {
       font-size: 14px;
       font-weight: 300;
-      min-width: 90%;
-      @include mix.breakpoint(lg) {
-        min-width: 70%;
-      }
-      @include mix.breakpoint(xl) {
-        min-width: 75%;
-      }
+      // min-width: 70%;
     }
     &__price {
       align-self: flex-end;
@@ -168,26 +166,24 @@
 
   &__list a:hover {
     .menu__item__plate {
-      @include mix.breakpoint(lg) {
-        width: calc(90%);
-        @include anim.description-plate-lg;
-      }
+      width: calc(97%);
+      @include anim.plate-width;
     }
     .menu__item__description {
-      width: calc(80%);
+      width: calc(83.5%);
       @include anim.description-width;
       @include mix.breakpoint(md) {
         width: calc(100%);
         animation: none;
       }
       @include mix.breakpoint(lg) {
-        width: calc(73%);
-        @include anim.description-width-lg;
+        width: calc(83.5%);
+        @include anim.description-width;
       }
-      // @include mix.breakpoint(xl) {
-      //   width: calc(100%);
-      //   animation: none;
-      // }
+      @include mix.breakpoint(xl) {
+        width: calc(100%);
+        animation: none;
+      }
     }
     .menu__item__price {
       transform: translateX(-62px);
