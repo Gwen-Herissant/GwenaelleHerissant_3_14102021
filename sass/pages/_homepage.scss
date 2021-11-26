@@ -119,13 +119,14 @@
 .restaurant {
   background-color: darken(var.$bg-primary, 3%);
   padding: 50px 20px;
+  flex: 1 1 auto;
   @include mix.breakpoint(lg) {
     padding: 45px 40px 70px;
   }
-  @include mix.breakpoint(xxl) {
-    height: 54.2vh;
-    // padding-top: 5%;
-  }
+  // @include mix.breakpoint(xxl) {
+  //   height: 54.2vh;
+  //   // padding-top: 5%;
+  // }
   &__title {
     margin-bottom: 20px;
     @include mix.breakpoint(lg) {
