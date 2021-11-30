@@ -11,9 +11,6 @@
     width: 100%;
     height: 250px;
     object-fit: cover;
-    // @include mix.breakpoint(xxl) {
-    //   height: 23vh;
-    // }
   }
 }
 
@@ -27,12 +24,9 @@
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   @include mix.breakpoint(sm) {
-    padding: 35px auto 60px auto;
+    padding: 35px 0 60px 0;
   }
-  // @include mix.breakpoint(xxl) {
-  //   height: 61.5vh;
-  //   padding-top: 5%;
-  // }
+
   //header section = restaurant name + heart icon
   &__header {
     display: flex;
@@ -40,7 +34,6 @@
     margin-bottom: 28px;
     @include mix.breakpoint(sm) {
       width: 90%;
-      // justify-content: center;
       margin-left: 5%;
     }
     @include mix.breakpoint(lg) {
@@ -66,7 +59,6 @@
         position: absolute;
         display: inline-block;
         color: var.$color-secondary;
-        // opacity: 0;
         transform-origin: bottom;
         transform: scale(0);
         z-index: -1;
@@ -80,7 +72,6 @@
       }
       &:hover {
         &::before {
-          // opacity: 1;
           transform: scale(0.9);
         }
       }
@@ -109,7 +100,6 @@
     background-color: var.$bg-primary;
     border-radius: 17px;
     box-shadow: 0px 5px 10px darken(var.$bg-primary, 20%);
-    // padding: 15px;
     margin-bottom: 15px;
     overflow: hidden;
     @include mix.breakpoint(sm) {
@@ -124,13 +114,6 @@
       position: relative;
       min-width: 85%;
       flex: 1 1 auto;
-      // @include mix.breakpoint(sm) {
-      //   min-width: 70%;
-      // }
-      // @include mix.breakpoint(md) {
-      //   width: fit-content;
-      //   min-width: 50%;
-      // }
     }
 
     &__plate,
@@ -146,24 +129,17 @@
       font-weight: 500;
       margin-bottom: 4px;
       margin-top: 15px;
-      // @include mix.breakpoint(lg) {
-      //   min-width: 98%;
-      // }
     }
 
     &__description {
       font-size: 14px;
       font-weight: 300;
-      // min-width: 70%;
       margin-bottom: 15px;
     }
 
     &__anim {
       position: relative;
       display: flex;
-      // @include mix.breakpoint(sm) {
-      //   transform: translateX(60px);
-      // }
     }
 
     &__price {
@@ -176,14 +152,9 @@
       margin-bottom: 15px;
     }
     &__check {
-      // position: absolute;
       background-color: var.$color-tertiary;
       width: 57px;
       opacity: 0;
-      // top: 0;
-      // bottom: 0;
-      // right: 0;
-      // transform: translateX(60px);
     }
     &__check i {
       display: block;
@@ -194,34 +165,6 @@
   }
 
   &__list a:hover {
-    // .menu__item__plate {
-    //   width: calc(97%);
-    //   @include anim.plate-width;
-    // }
-    // .menu__item__description {
-    //   width: calc(83.5%);
-    //   @include anim.description-width;
-    //   @include mix.breakpoint(md) {
-    //     width: calc(100%);
-    //     animation: none;
-    //   }
-    //   @include mix.breakpoint(lg) {
-    //     width: calc(83.5%);
-    //     @include anim.description-width;
-    //   }
-    //   @include mix.breakpoint(xl) {
-    //     width: calc(100%);
-    //     animation: none;
-    //   }
-    // }
-    // .menu__item__price {
-    //   transform: translateX(-62px);
-    //   transition: transform 0.25s ease-in;
-    // }
-    // .menu__item__check {
-    //   transform: translateX(0px);
-    //   transition: transform 0.25s ease-in;
-    // }
     .menu__item__anim {
       transform: translateX(0px);
       transition: transform 0.25s ease-in;
@@ -248,7 +191,6 @@
 //margin between last menu item and btn
 .menu li:last-of-type {
   margin-bottom: 65px;
-  // animation-delay: 1s;
   @include mix.breakpoint(lg) {
     margin-bottom: 75px;
   }
