@@ -9,7 +9,7 @@
   flex: 1 1 auto;
   &__img {
     width: 100%;
-    height: 250px;
+    height: 15.625em;
     object-fit: cover;
   }
 }
@@ -17,36 +17,36 @@
 //entire menu section (=everything on grey bg) -> title + menus
 .menu {
   position: relative;
-  top: -40px;
+  top: -2.5em;
   height: 100%;
   background-color: darken(var.$bg-primary, 5%);
-  padding: 35px 15px 60px 15px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
+  padding: 2.1875em 0.9375em 3.75em 0.9375em;
+  border-top-left-radius: 2.5em;
+  border-top-right-radius: 2.5em;
   @include mix.breakpoint(sm) {
-    padding: 35px 0 60px 0;
+    padding: 2.1875em 0 3.75em 0;
   }
 
   //header section = restaurant name + heart icon
   &__header {
     display: flex;
     align-items: center;
-    margin-bottom: 28px;
+    margin-bottom: 1.75em;
     @include mix.breakpoint(sm) {
       width: 90%;
       margin-left: 5%;
     }
     @include mix.breakpoint(lg) {
-      margin-bottom: 40px;
+      margin-bottom: 2.5em;
     }
     &__title {
       font-family: "Shrikhand", cursive;
-      font-size: 27px;
+      font-size: 1.6875em;
       font-weight: 200;
     }
     &__icon {
       position: relative;
-      font-size: 24px;
+      font-size: 1.5em;
       margin-left: 10%;
       background-color: darken(var.$bg-primary, 5%);
       z-index: 0;
@@ -81,12 +81,12 @@
   //menu parts (aka "entrée" "plat" "dessert")
   &__part {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 300;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625em;
     border-bottom: 3.5px solid var.$color-tertiary;
-    width: 35px;
-    padding-bottom: 3px;
+    width: 2.1875em;
+    padding-bottom: 0.1875em;
     @include mix.breakpoint(sm) {
       margin-left: 5%;
     }
@@ -98,13 +98,13 @@
     justify-content: space-between;
     width: calc(100%);
     background-color: var.$bg-primary;
-    border-radius: 17px;
+    border-radius: 1.0625em;
     box-shadow: 0px 5px 10px darken(var.$bg-primary, 20%);
-    margin-bottom: 15px;
+    margin-bottom: 0.9375em;
     overflow: hidden;
     @include mix.breakpoint(sm) {
       width: calc(90%);
-      margin: 0 auto 15px auto;
+      margin: 0 auto 0.9375em auto;
     }
     @include mix.breakpoint(md) {
       min-width: calc(70%);
@@ -121,20 +121,20 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      margin-left: 15px;
+      margin-left: 0.9375em;
     }
 
     &__plate {
-      font-size: 18px;
+      font-size: 1.125em;
       font-weight: 500;
-      margin-bottom: 4px;
-      margin-top: 15px;
+      margin-bottom: 0.25em;
+      margin-top: 0.9375em;
     }
 
     &__description {
-      font-size: 14px;
+      font-size: 0.875em;
       font-weight: 300;
-      margin-bottom: 15px;
+      margin-bottom: 0.9375em;
     }
 
     &__anim {
@@ -144,21 +144,21 @@
 
     &__price {
       align-self: flex-end;
-      font-size: 14px;
+      font-size: 0.875em;
       font-weight: 600;
       color: lighten(var.$text-color, 15%);
-      margin-left: 15px;
-      margin-right: 15px;
-      margin-bottom: 15px;
+      margin-left: 0.9375em;
+      margin-right: 0.9375em;
+      margin-bottom: 0.9375em;
     }
     &__check {
       background-color: var.$color-tertiary;
-      width: 57px;
+      width: 3.5625em;
       opacity: 0;
     }
     &__check i {
       display: block;
-      font-size: 20px;
+      font-size: 1.25em;
       margin: 26px 18px;
       color: var.$bg-primary;
     }
@@ -190,9 +190,9 @@
 
 //margin between last menu item and btn
 .menu li:last-of-type {
-  margin-bottom: 65px;
+  margin-bottom: 4.0625em;
   @include mix.breakpoint(lg) {
-    margin-bottom: 75px;
+    margin-bottom: 4.6875em;
   }
 }
 

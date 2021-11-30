@@ -5,9 +5,9 @@
 .footer {
   background-color: var.$bg-secondary;
   color: var.$bg-primary;
-  padding: 27px 0 30px 25px;
+  padding: 1.6875em 0 1.875em 1.5625em;
   @include mix.breakpoint(sm) {
-    padding: 27px 0 30px;
+    padding: 1.6875em 0 1.875em;
   }
 
   @include mix.breakpoint(xxl) {
@@ -17,30 +17,30 @@
   }
   &__title {
     font-family: "Shrikhand", cursive;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 400;
-    margin-bottom: 18px;
+    margin-bottom: 1.125em;
     @include mix.breakpoint(sm) {
-      font-size: 20px;
+      font-size: 1.25em;
       text-align: center;
-      margin: 5px 0 30px;
+      margin: 0.3125em 0 1.875em;
     }
     @include mix.breakpoint(md) {
       text-align: left;
-      margin: 5px 5% 30px;
+      margin: 0.3125em 5% 1.875em;
     }
   }
   &__link {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
-    margin-bottom: 7px;
+    margin-bottom: 0.4375em;
   }
   &__link a {
     color: var.$bg-primary;
   }
   &__icon {
-    font-size: 12px;
-    padding-right: 10px;
+    font-size: 0.75em;
+    padding-right: 0.625em;
   }
   &__flex {
     @include mix.breakpoint(sm) {

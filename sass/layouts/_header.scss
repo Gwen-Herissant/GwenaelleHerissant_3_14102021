@@ -7,10 +7,10 @@
   justify-content: center;
   position: relative;
   z-index: 2;
-  padding: 20px 0 15px 0;
+  padding: 1.25em 0 0.9375em 0;
   box-shadow: 0 3px 4px darken(var.$bg-primary, 20%);
   &__logo {
-    width: 165px;
+    width: 10.3125em;
     @include mix.breakpoint(lg) {
       margin-left: auto;
       margin-right: 6%;
@@ -18,7 +18,7 @@
   }
   &__icon {
     position: absolute;
-    font-size: 18px;
+    font-size: 1.125em;
     color: lighten(var.$text-color, 20%);
     transform: translate(-75px, 5px);
     @include mix.breakpoint(sm) {

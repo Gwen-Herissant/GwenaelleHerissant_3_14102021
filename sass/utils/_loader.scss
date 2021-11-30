@@ -23,54 +23,53 @@
 
   &__logo {
     font-family: "Shrikhand", cursive;
-    font-size: 35px;
+    font-size: 2.1875em;
     font-weight: 200;
     color: var.$color-secondary;
     margin-top: 35%;
     @include mix.breakpoint(sm) {
-      font-size: 40px;
+      font-size: 2.5em;
     }
   }
   &__p {
     font-family: "Roboto", sans-serif;
-    font-size: 15px;
+    font-size: 0.9375em;
     color: var.$bg-primary;
     @include mix.breakpoint(sm) {
-      font-size: 20px;
+      font-size: 1.25em;
     }
   }
   &__logo,
   &__p {
     text-align: center;
-    padding: 15px;
+    padding: 0.9375em;
   }
   &__bar {
     position: relative;
     display: flex;
     justify-items: center;
-    width: 300px;
-    height: 29px;
+    width: 18.75em;
+    height: 1.8125em;
     border: 2px solid var.$color-tertiary;
-    padding: 2.5px;
+    padding: 0.15625em;
     margin-top: 50px;
     @include mix.breakpoint(sm) {
-      width: 400px;
-      height: 29px;
-      // padding: 2.5px;
+      width: 25em;
+      height: 1.8125em;
     }
     &::after {
       content: "";
       position: absolute;
       display: inline-block;
-      width: 291px;
-      height: 21px;
+      width: 18.1875em;
+      height: 1.3125em;
       background-color: var.$color-tertiary;
       transform-origin: left;
       transform: scale(0);
       @include anim.loader-bar;
       @include mix.breakpoint(sm) {
-        width: 391px;
-        height: 21px;
+        width: 24.4375em;
+        height: 1.3125em;
       }
     }
   }
