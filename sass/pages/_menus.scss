@@ -121,7 +121,6 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      margin-left: 0.9375em;
     }
 
     &__plate {
@@ -129,12 +128,14 @@
       font-weight: 500;
       margin-bottom: 0.25em;
       margin-top: 0.9375em;
+      margin-left: 0.9375em;
     }
 
     &__description {
       font-size: 0.875em;
       font-weight: 300;
       margin-bottom: 0.9375em;
+      margin-left: 1.2em;
     }
 
     &__anim {
