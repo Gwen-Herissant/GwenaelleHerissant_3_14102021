@@ -48,28 +48,28 @@
     position: relative;
     display: flex;
     justify-items: center;
-    width: 18.75em;
-    height: 1.8125em;
+    width: 300px;
+    height: 29px;
     border: 2px solid var.$color-tertiary;
-    padding: 0.15625em;
+    padding: 2.5px;
     margin-top: 50px;
     @include mix.breakpoint(sm) {
-      width: 25em;
-      height: 1.8125em;
+      width: 400px;
+      height: 29px;
     }
     &::after {
       content: "";
       position: absolute;
       display: inline-block;
-      width: 18.1875em;
-      height: 1.3125em;
+      width: 291px;
+      height: 77%;
       background-color: var.$color-tertiary;
       transform-origin: left;
       transform: scale(0);
       @include anim.loader-bar;
       @include mix.breakpoint(sm) {
-        width: 24.4375em;
-        height: 1.3125em;
+        width: 391px;
+        height: 77%;
       }
     }
   }
